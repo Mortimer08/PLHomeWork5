@@ -50,4 +50,6 @@ PrintDoubleArray(arr);
 
 double maximalElement = MaximalElement(arr);
 double minimalElement = MinimalElement(arr);
-Console.WriteLine($"Разница между максимальным {maximalElement} и минимальным {minimalElement} элементами массива равнa {maximalElement - minimalElement}");
+// Однажды получил разницу 14.700000000000001, добавил округление
+double difference = Math.Round(maximalElement - minimalElement,1);
+Console.WriteLine($"Разница между максимальным {maximalElement} и минимальным {minimalElement} элементами массива равнa {difference}");
